@@ -1,0 +1,14 @@
+[project]
+name = "wizard"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fast-colorthief>=0.0.5",
+    "flask>=3.1.1",
+    "mss>=10.0.0",
+    "pillow>=11.3.0",
+    "pycaw>=20240210",
+    "pystray>=0.19.5",
+]
