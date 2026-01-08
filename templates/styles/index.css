@@ -1,0 +1,80 @@
+:root {
+    --background-colour: #171717;
+    --fall-light: rgb(12, 107, 155);
+    --toggle-colour: var(--fall-light);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-container {
+    background-color: var(--background-colour);
+    background-image: radial-gradient(rgba(76, 76, 76, 0.2) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+.card-container {
+    width: 190px;
+    height: 254px;
+    border-radius: .5em;
+    padding: .125em;
+    background-image: linear-gradient(to bottom, #d5d5d5, #e8e8e8);
+    box-shadow: 0 1px 1px rgb(255 255 255 / .6);
+    font-size: 1.5em;
+}
+
+.card {
+    border-radius: .375em;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+    box-shadow: inset 0 0 .0625em .125em rgb(255 255 255 / .2), inset 0 .0625em .125em rgb(0 0 0 / .4);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 5rem;
+    background: linear-gradient(120deg, var(--background-colour) 0%, var(--fall-light) 100%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1 {
+    animation: gradient 3s ease infinite;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+}

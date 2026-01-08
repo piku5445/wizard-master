@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/vanilla-colorful@0.6.2/+esm"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-sans min-h-screen p-6">
+
+    <div class="max-w-3xl mx-auto space-y-8">
+        <h1 class="text-3xl font-bold text-center text-white">Theatre Experience Dashboard</h1>
+
+        <!-- Theatre Mode -->
+        <section class="bg-gray-800 p-5 rounded-xl shadow">
+            <h2 class="text-xl font-semibold mb-4">Theatre Mode</h2>
+            <div class="flex items-center gap-3 mb-4">
+                <label class="w-28 text-sm">Monitor</label>
+                <input type="range" min="-1" max="10" value="2" step="1" class="w-full accent-blue-500"
+                    hx-post="/api/set-monitor" hx-vals='{"monitor": "js:event.target.value"}'>
+            </div>
+            <div class="wrapper">
+                <input type="range" min="0" max="100" value="50" />
+            </div>
+
+            <div class="wrapper">
+                <input type="range" min="1" max="10" value="5" step="1" />
+            </div>
+            <div class="flex items-center gap-3">
+                <button id="theatre-toggle" class="w-12 h-6 rounded-full bg-gray-500 relative transition-colors">
+                    <span
+                        class="block w-5 h-5 bg-white rounded-full absolute top-0.5 left-0.5 transition-transform"></span>
+                </button>
+                <span id="theatre-status" class="text-gray-300">Theatre mode is OFF</span>
+            </div>
+        </section>
+
+        <!-- RGB Lighting -->
+        <section class="bg-gray-800 p-5 rounded-xl shadow">
+            <h2 class="text-xl font-semibold mb-4">RGB Lighting</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <label class="text-sm">Colour</label>
+                <color-picker id="rgb-picker" class="w-70 h-40 mt-2 rounded bg-gray-200 "></color-picker>
+                <div>
+                    <label class="text-sm">Dimmer</label>
+                    <input type="range" id="rgb-dimmer" min="0" max="100" value="100" step="1"
+                        class="w-full accent-blue-500 mt-2" hx-post="/api/set-rgb" hx-trigger="input delay:100ms"
+                        hx-vals='{"dimming": "js:event.target.value"}'>
+                </div>
+            </div>
+            <div id="rgb-preview"
+                class="mt-4 w-full h-20 rounded-lg flex items-center justify-center text-white font-bold"
+                style="background: rgb(128,128,128);">
+                Preview
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Theatre toggle
+        const toggleBtn = document.getElementById('theatre-toggle');
+        const toggleStatus = document.getElementById('theatre-status');
+        let theatreOn = false;
+        toggleBtn.addEventListener('click', () => {
+            theatreOn = !theatreOn;
+            toggleBtn.classList.toggle('bg-blue-600', theatreOn);
+            toggleBtn.querySelector('span').style.transform = theatreOn ? 'translateX(1.5rem)' : 'translateX(0)';
+            toggleStatus.textContent = theatreOn ? 'Theatre mode is ON' : 'Theatre mode is OFF';
+            htmx.ajax('POST', '/api/toggle-theatre', { values: { status: theatreOn } });
+        });
+
+        // RGB Color Picker
+        const picker = document.getElementById('rgb-picker');
+        picker.addEventListener('color-changed', e => {
+            const { r, g, b } = e.detail.rgb;
+            document.getElementById('rgb-preview').style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            htmx.ajax('POST', '/api/set-rgb', { values: { colour: `rgb(${r}, ${g}, ${b})` } });
+        });
+    </script>
+
+</body>
+
+</html>

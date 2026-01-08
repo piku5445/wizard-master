@@ -1,0 +1,658 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "CLSCTX_ALL",
+        "importPath": "comtypes",
+        "description": "comtypes",
+        "isExtraImport": true,
+        "detail": "comtypes",
+        "documentation": {}
+    },
+    {
+        "label": "AudioUtilities",
+        "importPath": "pycaw.pycaw",
+        "description": "pycaw.pycaw",
+        "isExtraImport": true,
+        "detail": "pycaw.pycaw",
+        "documentation": {}
+    },
+    {
+        "label": "IAudioMeterInformation",
+        "importPath": "pycaw.pycaw",
+        "description": "pycaw.pycaw",
+        "isExtraImport": true,
+        "detail": "pycaw.pycaw",
+        "documentation": {}
+    },
+    {
+        "label": "fast_colorthief",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "fast_colorthief",
+        "description": "fast_colorthief",
+        "detail": "fast_colorthief",
+        "documentation": {}
+    },
+    {
+        "label": "mss",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mss",
+        "description": "mss",
+        "detail": "mss",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Icon",
+        "importPath": "pystray",
+        "description": "pystray",
+        "isExtraImport": true,
+        "detail": "pystray",
+        "documentation": {}
+    },
+    {
+        "label": "Menu",
+        "importPath": "pystray",
+        "description": "pystray",
+        "isExtraImport": true,
+        "detail": "pystray",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItem",
+        "importPath": "pystray",
+        "description": "pystray",
+        "isExtraImport": true,
+        "detail": "pystray",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Wizard\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Wizard\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Wizard\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Wizard\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Wizard\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "bulb_ip",
+        "kind": 5,
+        "importPath": "tests.test1",
+        "description": "tests.test1",
+        "peekOfCode": "bulb_ip = \"255.255.255.255\"               \n# for _ in range(10):\nmessage = '{\"method\":\"setPilot\",\"params\":{\"r\":100,\"g\":200,\"b\":0}}'  # red, 100% dim\n#     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n#     sock.sendto(message.encode('utf-8'), (bulb_ip, 38899))\n#     time.sleep(3)\n#     message = '{\"method\":\"setPilot\",\"params\":{\"r\":0,\"g\":255,\"b\":0,\"dimming\":100}}'  # green, 100% dim\n#     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n#     sock.sendto(message.encode('utf-8'), (bulb_ip, 38899)) \n#     time.sleep(3)",
+        "detail": "tests.test1",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "tests.test1",
+        "description": "tests.test1",
+        "peekOfCode": "message = '{\"method\":\"setPilot\",\"params\":{\"r\":100,\"g\":200,\"b\":0}}'  # red, 100% dim\n#     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n#     sock.sendto(message.encode('utf-8'), (bulb_ip, 38899))\n#     time.sleep(3)\n#     message = '{\"method\":\"setPilot\",\"params\":{\"r\":0,\"g\":255,\"b\":0,\"dimming\":100}}'  # green, 100% dim\n#     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n#     sock.sendto(message.encode('utf-8'), (bulb_ip, 38899)) \n#     time.sleep(3)\n#     message = '{\"method\":\"setPilot\",\"params\":{\"r\":0,\"g\":0,\"b\":255,\"dimming\":100}}'  # green, 100% dim\n#     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)",
+        "detail": "tests.test1",
+        "documentation": {}
+    },
+    {
+        "label": "sock",
+        "kind": 5,
+        "importPath": "tests.test1",
+        "description": "tests.test1",
+        "peekOfCode": "sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\nsock.sendto(message.encode('utf-8'), (bulb_ip, 38899))",
+        "detail": "tests.test1",
+        "documentation": {}
+    },
+    {
+        "label": "bulb_ip",
+        "kind": 5,
+        "importPath": "tests.test2",
+        "description": "tests.test2",
+        "peekOfCode": "bulb_ip = \"192.168.1.2\"  # Replace with your bulb's IP\nmessage = '{\"method\":\"getPilot\",\"params\":{}}'\n# Create UDP socket\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.settimeout(2)  # 2 second timeout so script won't hang forever\n# Send the command\nsock.sendto(message.encode('utf-8'), (bulb_ip, 38899))\ntry:\n    # Receive the response\n    data, addr = sock.recvfrom(1024)  # buffer size 1024 bytes",
+        "detail": "tests.test2",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "tests.test2",
+        "description": "tests.test2",
+        "peekOfCode": "message = '{\"method\":\"getPilot\",\"params\":{}}'\n# Create UDP socket\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.settimeout(2)  # 2 second timeout so script won't hang forever\n# Send the command\nsock.sendto(message.encode('utf-8'), (bulb_ip, 38899))\ntry:\n    # Receive the response\n    data, addr = sock.recvfrom(1024)  # buffer size 1024 bytes\n    print(\"Response from bulb:\", data.decode('utf-8'))",
+        "detail": "tests.test2",
+        "documentation": {}
+    },
+    {
+        "label": "sock",
+        "kind": 5,
+        "importPath": "tests.test2",
+        "description": "tests.test2",
+        "peekOfCode": "sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.settimeout(2)  # 2 second timeout so script won't hang forever\n# Send the command\nsock.sendto(message.encode('utf-8'), (bulb_ip, 38899))\ntry:\n    # Receive the response\n    data, addr = sock.recvfrom(1024)  # buffer size 1024 bytes\n    print(\"Response from bulb:\", data.decode('utf-8'))\nexcept socket.timeout:\n    print(\"No response from bulb (timeout)\")",
+        "detail": "tests.test2",
+        "documentation": {}
+    },
+    {
+        "label": "discover_wiz_bulbs",
+        "kind": 2,
+        "importPath": "tests.test3",
+        "description": "tests.test3",
+        "peekOfCode": "def discover_wiz_bulbs(timeout=3):\n    bulbs = []\n    # Create UDP socket\n    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n    sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\n    sock.settimeout(timeout)\n    try:\n        # Send broadcast\n        sock.sendto(DISCOVERY_MESSAGE.encode('utf-8'), (BROADCAST_IP, PORT))\n        print(\"[*] Searching for WiZ bulbs on the network...\")",
+        "detail": "tests.test3",
+        "documentation": {}
+    },
+    {
+        "label": "PORT",
+        "kind": 5,
+        "importPath": "tests.test3",
+        "description": "tests.test3",
+        "peekOfCode": "PORT = 38899\nBROADCAST_IP = \"255.255.255.255\"\n# Broadcast discovery message\n# DISCOVERY_MESSAGE = '{\"method\":\"getPilot\",\"params\":{}}'\nDISCOVERY_MESSAGE = '{\"method\":\"setPilot\",\"params\":{\"r\":255,\"g\":0,\"b\":0,\"dimming\":100}}'\ndef discover_wiz_bulbs(timeout=3):\n    bulbs = []\n    # Create UDP socket\n    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n    sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)",
+        "detail": "tests.test3",
+        "documentation": {}
+    },
+    {
+        "label": "BROADCAST_IP",
+        "kind": 5,
+        "importPath": "tests.test3",
+        "description": "tests.test3",
+        "peekOfCode": "BROADCAST_IP = \"255.255.255.255\"\n# Broadcast discovery message\n# DISCOVERY_MESSAGE = '{\"method\":\"getPilot\",\"params\":{}}'\nDISCOVERY_MESSAGE = '{\"method\":\"setPilot\",\"params\":{\"r\":255,\"g\":0,\"b\":0,\"dimming\":100}}'\ndef discover_wiz_bulbs(timeout=3):\n    bulbs = []\n    # Create UDP socket\n    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n    sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\n    sock.settimeout(timeout)",
+        "detail": "tests.test3",
+        "documentation": {}
+    },
+    {
+        "label": "DISCOVERY_MESSAGE",
+        "kind": 5,
+        "importPath": "tests.test3",
+        "description": "tests.test3",
+        "peekOfCode": "DISCOVERY_MESSAGE = '{\"method\":\"setPilot\",\"params\":{\"r\":255,\"g\":0,\"b\":0,\"dimming\":100}}'\ndef discover_wiz_bulbs(timeout=3):\n    bulbs = []\n    # Create UDP socket\n    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n    sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\n    sock.settimeout(timeout)\n    try:\n        # Send broadcast\n        sock.sendto(DISCOVERY_MESSAGE.encode('utf-8'), (BROADCAST_IP, PORT))",
+        "detail": "tests.test3",
+        "documentation": {}
+    },
+    {
+        "label": "devices",
+        "kind": 5,
+        "importPath": "tests.test4",
+        "description": "tests.test4",
+        "peekOfCode": "devices = AudioUtilities.GetSpeakers()\ninterface = devices.Activate(\n    IAudioMeterInformation._iid_, CLSCTX_ALL, None\n)\nmeter = interface.QueryInterface(IAudioMeterInformation)\n# meter = AudioUtilities.GetAudioSessionManager\ntry:\n    while True:\n        bar = \"|\"+\"|\" * int(meter.GetPeakValue() * 500)\n        print(f\"{bar}\\n\\r\", end=\"\")",
+        "detail": "tests.test4",
+        "documentation": {}
+    },
+    {
+        "label": "interface",
+        "kind": 5,
+        "importPath": "tests.test4",
+        "description": "tests.test4",
+        "peekOfCode": "interface = devices.Activate(\n    IAudioMeterInformation._iid_, CLSCTX_ALL, None\n)\nmeter = interface.QueryInterface(IAudioMeterInformation)\n# meter = AudioUtilities.GetAudioSessionManager\ntry:\n    while True:\n        bar = \"|\"+\"|\" * int(meter.GetPeakValue() * 500)\n        print(f\"{bar}\\n\\r\", end=\"\")\n        # print(f\"Current master peak level: {meter.GetPeakValue():.2f}\\r\", end=\"\")",
+        "detail": "tests.test4",
+        "documentation": {}
+    },
+    {
+        "label": "meter",
+        "kind": 5,
+        "importPath": "tests.test4",
+        "description": "tests.test4",
+        "peekOfCode": "meter = interface.QueryInterface(IAudioMeterInformation)\n# meter = AudioUtilities.GetAudioSessionManager\ntry:\n    while True:\n        bar = \"|\"+\"|\" * int(meter.GetPeakValue() * 500)\n        print(f\"{bar}\\n\\r\", end=\"\")\n        # print(f\"Current master peak level: {meter.GetPeakValue():.2f}\\r\", end=\"\")\n        time.sleep(0.1)\nexcept KeyboardInterrupt:\n    pass",
+        "detail": "tests.test4",
+        "documentation": {}
+    },
+    {
+        "label": "BROADCAST_IP",
+        "kind": 5,
+        "importPath": "tests.test5",
+        "description": "tests.test5",
+        "peekOfCode": "BROADCAST_IP = \"255.255.255.255\"\nPORT = 38899\n# Take a screenshot\nwith mss.mss() as sct:\n    sct.shot(output=\"ss.png\")\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\n# Set the image path to the screenshot\nimage_path = \"ss.png\"",
+        "detail": "tests.test5",
+        "documentation": {}
+    },
+    {
+        "label": "PORT",
+        "kind": 5,
+        "importPath": "tests.test5",
+        "description": "tests.test5",
+        "peekOfCode": "PORT = 38899\n# Take a screenshot\nwith mss.mss() as sct:\n    sct.shot(output=\"ss.png\")\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\n# Set the image path to the screenshot\nimage_path = \"ss.png\"\nr, g, b = [0, 0, 0]",
+        "detail": "tests.test5",
+        "documentation": {}
+    },
+    {
+        "label": "sock",
+        "kind": 5,
+        "importPath": "tests.test5",
+        "description": "tests.test5",
+        "peekOfCode": "sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\n# Set the image path to the screenshot\nimage_path = \"ss.png\"\nr, g, b = [0, 0, 0]\ndiff_threshold = 10\n# Get the dominant color from the screenshot\nwhile True:\n    # Take a new screenshot",
+        "detail": "tests.test5",
+        "documentation": {}
+    },
+    {
+        "label": "image_path",
+        "kind": 5,
+        "importPath": "tests.test5",
+        "description": "tests.test5",
+        "peekOfCode": "image_path = \"ss.png\"\nr, g, b = [0, 0, 0]\ndiff_threshold = 10\n# Get the dominant color from the screenshot\nwhile True:\n    # Take a new screenshot\n    with mss.mss() as sct:\n        sct.shot(output=\"ss.png\")\n    dominant_color = fast_colorthief.get_dominant_color(image_path, 10, True)\n    if dominant_color is None:",
+        "detail": "tests.test5",
+        "documentation": {}
+    },
+    {
+        "label": "diff_threshold",
+        "kind": 5,
+        "importPath": "tests.test5",
+        "description": "tests.test5",
+        "peekOfCode": "diff_threshold = 10\n# Get the dominant color from the screenshot\nwhile True:\n    # Take a new screenshot\n    with mss.mss() as sct:\n        sct.shot(output=\"ss.png\")\n    dominant_color = fast_colorthief.get_dominant_color(image_path, 10, True)\n    if dominant_color is None:\n        break\n    # Skip if color is the same as previous iteration",
+        "detail": "tests.test5",
+        "documentation": {}
+    },
+    {
+        "label": "color_detection_loop",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def color_detection_loop( ):\n    global r, g, b, stop_thread\n    while not stop_thread:\n        try:\n            takeScreenshot()\n            dominant_color = fast_colorthief.get_dominant_color(image_path, 10, True)\n            # Continue loop even if no color is detected\n            if dominant_color is None:\n                print(\"No color detected\")\n                time.sleep(0.15) # Continue loop even if no color is detected",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    contactBulb(255, 255, 255, 100)\n    return render_template('index.html', status=getStatus())\nif __name__ == '__main__':\n    app.run(debug=True)\n@app.route('/service/<string:toggle>')\ndef start(toggle):\n    global  color_thread,stop_thread\n    if toggle == \"on\":\n        stop_thread = False",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def start(toggle):\n    global  color_thread,stop_thread\n    if toggle == \"on\":\n        stop_thread = False\n        # Only start a new thread if one isn't already running or if the old one has stopped\n        if color_thread is None or not color_thread.is_alive():\n            color_thread = threading.Thread(target=color_detection_loop, daemon=True)\n            color_thread.start()\n        return \"Color detection loop started\"\n    elif toggle == \"off\":",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "setDimming",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def setDimming(value):\n    global DIM\n    DIM = value\n    return f\"Dimming set to {value}\"\n@app.route('/rgb/<int:r>/<int:g>/<int:b>')\ndef setColors(r, g, b):\n    start(\"off\")\n    contactBulb(r, g, b, DIM)\n    return f\"Colors set to {r}, {g}, {b}\"\n@app.route('/monitor/<int:mon>')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "setColors",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def setColors(r, g, b):\n    start(\"off\")\n    contactBulb(r, g, b, DIM)\n    return f\"Colors set to {r}, {g}, {b}\"\n@app.route('/monitor/<int:mon>')\ndef setMonitor(mon):\n    global CRR_MONITOR\n    CRR_MONITOR = mon\n    return f\"Monitor set to {mon}\"\ndef takeScreenshot():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "setMonitor",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def setMonitor(mon):\n    global CRR_MONITOR\n    CRR_MONITOR = mon\n    return f\"Monitor set to {mon}\"\ndef takeScreenshot():\n    with mss.mss() as sct:\n        sct.shot(output=image_path, mon=CRR_MONITOR)\ndef contactBulb(r, g, b, DIM):\n    global sock\n    message = f'{{\"method\":\"setPilot\",\"params\":{{\"r\":{r},\"g\":{g},\"b\":{b},\"dimming\":{DIM}}}}}'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "takeScreenshot",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def takeScreenshot():\n    with mss.mss() as sct:\n        sct.shot(output=image_path, mon=CRR_MONITOR)\ndef contactBulb(r, g, b, DIM):\n    global sock\n    message = f'{{\"method\":\"setPilot\",\"params\":{{\"r\":{r},\"g\":{g},\"b\":{b},\"dimming\":{DIM}}}}}'\n    sock.sendto(message.encode('utf-8'), (BROADCAST_IP, PORT))\ndef getStatus():\n    message = '{\"method\":\"getPilot\",\"params\":{}}'\n    sock.sendto(message.encode('utf-8'), (BROADCAST_IP, PORT))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "contactBulb",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def contactBulb(r, g, b, DIM):\n    global sock\n    message = f'{{\"method\":\"setPilot\",\"params\":{{\"r\":{r},\"g\":{g},\"b\":{b},\"dimming\":{DIM}}}}}'\n    sock.sendto(message.encode('utf-8'), (BROADCAST_IP, PORT))\ndef getStatus():\n    message = '{\"method\":\"getPilot\",\"params\":{}}'\n    sock.sendto(message.encode('utf-8'), (BROADCAST_IP, PORT))\n    data, _ = sock.recvfrom(1024)\n    print(data)\n    return json.loads(data.decode('utf-8'))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "getStatus",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def getStatus():\n    message = '{\"method\":\"getPilot\",\"params\":{}}'\n    sock.sendto(message.encode('utf-8'), (BROADCAST_IP, PORT))\n    data, _ = sock.recvfrom(1024)\n    print(data)\n    return json.loads(data.decode('utf-8'))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\nBROADCAST_IP = \"255.255.255.255\"\nPORT = 38899\nimage_path = \"ss.png\"\ncolor_thread = None\nr, g, b = [0, 0, 0]\nstop_thread = True\ndiff_threshold = 50\nCRR_MONITOR = 1\nDIM = 100",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "BROADCAST_IP",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "BROADCAST_IP = \"255.255.255.255\"\nPORT = 38899\nimage_path = \"ss.png\"\ncolor_thread = None\nr, g, b = [0, 0, 0]\nstop_thread = True\ndiff_threshold = 50\nCRR_MONITOR = 1\nDIM = 100\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "PORT",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "PORT = 38899\nimage_path = \"ss.png\"\ncolor_thread = None\nr, g, b = [0, 0, 0]\nstop_thread = True\ndiff_threshold = 50\nCRR_MONITOR = 1\nDIM = 100\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "image_path",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "image_path = \"ss.png\"\ncolor_thread = None\nr, g, b = [0, 0, 0]\nstop_thread = True\ndiff_threshold = 50\nCRR_MONITOR = 1\nDIM = 100\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "color_thread",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "color_thread = None\nr, g, b = [0, 0, 0]\nstop_thread = True\ndiff_threshold = 50\nCRR_MONITOR = 1\nDIM = 100\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\ndef color_detection_loop( ):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "stop_thread",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "stop_thread = True\ndiff_threshold = 50\nCRR_MONITOR = 1\nDIM = 100\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\ndef color_detection_loop( ):\n    global r, g, b, stop_thread\n    while not stop_thread:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "diff_threshold",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "diff_threshold = 50\nCRR_MONITOR = 1\nDIM = 100\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\ndef color_detection_loop( ):\n    global r, g, b, stop_thread\n    while not stop_thread:\n        try:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "CRR_MONITOR",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "CRR_MONITOR = 1\nDIM = 100\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\ndef color_detection_loop( ):\n    global r, g, b, stop_thread\n    while not stop_thread:\n        try:\n            takeScreenshot()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "DIM",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "DIM = 100\nsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\ndef color_detection_loop( ):\n    global r, g, b, stop_thread\n    while not stop_thread:\n        try:\n            takeScreenshot()\n            dominant_color = fast_colorthief.get_dominant_color(image_path, 10, True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "sock",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)\nsock.settimeout(3)\ndef color_detection_loop( ):\n    global r, g, b, stop_thread\n    while not stop_thread:\n        try:\n            takeScreenshot()\n            dominant_color = fast_colorthief.get_dominant_color(image_path, 10, True)\n            # Continue loop even if no color is detected",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    print(\"Hello from wizard!\")\nif __name__ == \"__main__\":\n    main()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "quit_action",
+        "kind": 2,
+        "importPath": "systray",
+        "description": "systray",
+        "peekOfCode": "def quit_action(icon, item):\n    icon.stop()\n    os._exit(0)\ndef switchServer(icon, item):\n    global turnedON\n    turnedON = not turnedON\n    icon.icon = imageON if turnedON else imageOFF\nicon = Icon(\n    \"TrayApp\",\n    imageOFF,",
+        "detail": "systray",
+        "documentation": {}
+    },
+    {
+        "label": "switchServer",
+        "kind": 2,
+        "importPath": "systray",
+        "description": "systray",
+        "peekOfCode": "def switchServer(icon, item):\n    global turnedON\n    turnedON = not turnedON\n    icon.icon = imageON if turnedON else imageOFF\nicon = Icon(\n    \"TrayApp\",\n    imageOFF,\n    menu=Menu(\n        MenuItem(\"Turn off\" if turnedON else \"Turn On\", switchServer),\n        MenuItem(\"Exit\", quit_action)",
+        "detail": "systray",
+        "documentation": {}
+    },
+    {
+        "label": "imageOFF",
+        "kind": 5,
+        "importPath": "systray",
+        "description": "systray",
+        "peekOfCode": "imageOFF = Image.open(\"icons/expOFF.jpg\")\nturnedON = False\nimageON = Image.open(\"icons/expON.jpg\")\ndef quit_action(icon, item):\n    icon.stop()\n    os._exit(0)\ndef switchServer(icon, item):\n    global turnedON\n    turnedON = not turnedON\n    icon.icon = imageON if turnedON else imageOFF",
+        "detail": "systray",
+        "documentation": {}
+    },
+    {
+        "label": "turnedON",
+        "kind": 5,
+        "importPath": "systray",
+        "description": "systray",
+        "peekOfCode": "turnedON = False\nimageON = Image.open(\"icons/expON.jpg\")\ndef quit_action(icon, item):\n    icon.stop()\n    os._exit(0)\ndef switchServer(icon, item):\n    global turnedON\n    turnedON = not turnedON\n    icon.icon = imageON if turnedON else imageOFF\nicon = Icon(",
+        "detail": "systray",
+        "documentation": {}
+    },
+    {
+        "label": "imageON",
+        "kind": 5,
+        "importPath": "systray",
+        "description": "systray",
+        "peekOfCode": "imageON = Image.open(\"icons/expON.jpg\")\ndef quit_action(icon, item):\n    icon.stop()\n    os._exit(0)\ndef switchServer(icon, item):\n    global turnedON\n    turnedON = not turnedON\n    icon.icon = imageON if turnedON else imageOFF\nicon = Icon(\n    \"TrayApp\",",
+        "detail": "systray",
+        "documentation": {}
+    },
+    {
+        "label": "icon",
+        "kind": 5,
+        "importPath": "systray",
+        "description": "systray",
+        "peekOfCode": "icon = Icon(\n    \"TrayApp\",\n    imageOFF,\n    menu=Menu(\n        MenuItem(\"Turn off\" if turnedON else \"Turn On\", switchServer),\n        MenuItem(\"Exit\", quit_action)\n    )\n)\nicon.run()",
+        "detail": "systray",
+        "documentation": {}
+    }
+]
